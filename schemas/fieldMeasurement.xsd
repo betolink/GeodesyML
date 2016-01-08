@@ -24,13 +24,14 @@
 			<extension base="geo:DynamicFeatureType">
 				<sequence>
 					<element name="atSite" type="geo:SitePropertyType" minOccurs="0"/>
-					<element name="history" minOccurs="0">
-						<complexType>
-							<sequence>
-								<element ref="geo:SetupInstance" maxOccurs="unbounded"/>
-							</sequence>
-						</complexType>
-					</element>
+                    <!-- TODO: remove history element for now, it breaks xsd-schema JAXB generation -->
+					<!-- <element name="history" minOccurs="0"> -->
+					<!-- 	<complexType> -->
+					<!-- 		<sequence> -->
+					<!-- 			<element ref="geo:SetupInstance" maxOccurs="unbounded"/> -->
+					<!-- 		</sequence> -->
+					<!-- 	</complexType> -->
+					<!-- </element> -->
 					<group ref="geo:RemarksGroup"/>
 				</sequence>
 			</extension>
@@ -112,13 +113,14 @@
 		<complexContent>
 			<extension base="geo:AbstractObservationQualityType">
 				<sequence>
-					<element name="history" minOccurs="0">
-						<complexType>
-							<sequence>
-								<element ref="geo:GNSSObservationQualityInstance" maxOccurs="unbounded"/>
-							</sequence>
-						</complexType>
-					</element>
+                    <!-- TODO: remove history element for now, it breaks xsd-schema JAXB generation -->
+					<!-- <element name="history" minOccurs="0"> -->
+					<!-- 	<complexType> -->
+					<!-- 		<sequence> -->
+					<!-- 			<element ref="geo:GNSSObservationQualityInstance" maxOccurs="unbounded"/> -->
+					<!-- 		</sequence> -->
+					<!-- 	</complexType> -->
+					<!-- </element> -->
 				</sequence>
 			</extension>
 		</complexContent>
