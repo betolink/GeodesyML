@@ -409,13 +409,14 @@
 							<documentation>Estimation (adjustment) that defined position. As of GeodesyML 0.2 this can include any operation type. Retained (not deprecated) because this element can specify the default source for all elements in the history element</documentation>
 						</annotation>
 					</element>
-					<element name="history">
-						<complexType>
-							<sequence>
-								<element ref="geo:PositionTimeSlice" maxOccurs="unbounded"/>
-							</sequence>
-						</complexType>
-					</element>
+                    <!-- TODO: remove history for time being, they break ogc-schema JAXB generation -->
+					<!-- <element name="history"> -->
+					<!-- 	<complexType> -->
+					<!-- 		<sequence> -->
+					<!-- 			<element ref="geo:PositionTimeSlice" maxOccurs="unbounded"/> -->
+					<!-- 		</sequence> -->
+					<!-- 	</complexType> -->
+					<!-- </element> -->
 					<group ref="geo:RemarksGroup"/>
 				</sequence>
 				<attributeGroup ref="geo:RequiredSRSReferenceGroup"/>
