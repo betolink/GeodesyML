@@ -183,7 +183,8 @@
 							</restriction>
 						</simpleType>
 					</element>
-					<element name="Location" type="string" minOccurs="0"/>
+                    <!-- TODO: Remove location element for now, it breaks ogc-schema JAXB generation. -->
+					<!-- <element name="Location" type="string" minOccurs="0"/> -->
 					<element name="LocalIDNumber" type="string" minOccurs="0"/>
 					<element name="MarkDescription" type="string" minOccurs="0"/>
 					<element name="GNSSReceiver" type="geo:InstrumentPropertyType" minOccurs="0"/>
