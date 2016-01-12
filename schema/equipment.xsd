@@ -255,7 +255,8 @@
 			<extension base="geo:InstrumentType">
 				<sequence>
 					<element name="instrumentation" type="string"/>
-					<element ref="gml:validTime"/>
+					<element name="effectiveStartDate" type="gml:TimePositionType" minOccurs="0"/>
+					<element name="effectiveEndDate" type="gml:TimePositionType" minOccurs="0"/>
 				</sequence>
 			</extension>
 		</complexContent>
