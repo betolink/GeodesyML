@@ -360,9 +360,7 @@
 				<geo:telephoneSecondary></geo:telephoneSecondary>
 				<geo:fax>+61 2 6249 9929</geo:fax>
 				<geo:e-mail>ryan.ruddick@ga.gov.au</geo:e-mail>
-				<geo:role>
-					<gmd:CI_RoleCode codeList="http://xml.gov.au/icsm/geodesyml/codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Primary">Scientist A/g, Geodesy &amp; Seismic Monitoring Group</gmd:CI_RoleCode>
-				</geo:role>
+				<geo:role codeList="../../codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Primary">Scientist A/g, Geodesy &amp; Seismic Monitoring Group</geo:role>
 			</geo:contact>
 			<geo:contact>
 				<geo:name>Bob Twilley</geo:name>
@@ -370,9 +368,7 @@
 				<geo:telephoneSecondary>+61 413 604 180</geo:telephoneSecondary>
 				<geo:fax>+61 2 6249 9929</geo:fax>
 				<geo:e-mail>bob.twilley@ga.gov.au</geo:e-mail>
-				<geo:role>
-					<gmd:CI_RoleCode codeList="http://xml.gov.au/icsm/geodesyml/codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Secondary">Technical Officer, Geodesy &amp; Seismic Monitoring Group</gmd:CI_RoleCode>
-				</geo:role>
+				<geo:role codeList="../../codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Secondary">Technical Officer, Geodesy &amp; Seismic Monitoring Group</geo:role>
 			</geo:contact>	
 		</geo:agency>
 		<geo:agency gml:id="RESPONSEAGENCY_1">
@@ -391,9 +387,7 @@
 				<geo:telephoneSecondary>+61 413 604 180</geo:telephoneSecondary>
 				<geo:fax>+61 2 6249 9929</geo:fax>
 				<geo:e-mail>bob.twilley@ga.gov.au</geo:e-mail>
-				<geo:role>
-					<gmd:CI_RoleCode codeList="http://xml.gov.au/icsm/geodesyml/codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Primary">Technical Officer, Geodesy &amp; Seismic Monitoring Group</gmd:CI_RoleCode>
-				</geo:role>
+				<geo:role codeList="../../codelists/contacts-roles-codelists.xml#Role-Contact" codeListValue="Primary">Technical Officer, Geodesy &amp; Seismic Monitoring Group</geo:role>
 			</geo:contact>
 		</geo:agency>
 	</geo:siteLog>
