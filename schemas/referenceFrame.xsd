@@ -176,13 +176,14 @@ A transformation between reference frames in the static sense requires no tempor
 				<sequence>
 					<element ref="geo:Status" minOccurs="0"/>
 					<element name="source" type="geo:InterpolatedValueSourcePropertyType" minOccurs="0"/>
-					<element name="history">
-						<complexType>
-							<sequence>
-								<element ref="geo:InterpolatedSingleValue" maxOccurs="unbounded"/>
-							</sequence>
-						</complexType>
-					</element>
+                    <!-- TODO: remove history element for now, it breaks ogc-schema JAXB generation. -->
+					<!-- <element name="history"> -->
+					<!-- 	<complexType> -->
+					<!-- 		<sequence> -->
+					<!-- 			<element ref="geo:InterpolatedSingleValue" maxOccurs="unbounded"/> -->
+					<!-- 		</sequence> -->
+					<!-- 	</complexType> -->
+					<!-- </element> -->
 				</sequence>
 			</extension>
 		</complexContent>

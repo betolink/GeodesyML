@@ -184,7 +184,8 @@
 			</geo:Document>
 		</geo:associatedDocument>
 		<geo:FourCharID>MOBS</geo:FourCharID>
-		<geo:Location>The station is located at the old Melbourne Observatory in the Royal Melbourne Botanical Gardens.</geo:Location>
+		<!-- geo:Location>The station is located at the old Melbourne Observatory in the Royal Melbourne Botanical Gardens.</geo:Location -->
+		<!-- geo:Location temp removed from observationSystems.xsd in https://github.com/GeoscienceAustralia/GeodesyML/commit/9e4a4bdfc508ab995c8673e531c7327d1013e0cf -->
 		<geo:MarkDescription>Antenna is attached on top of a stainless steel pillar which has been secured intot the top of a bluestone pillar set in bedrock.</geo:MarkDescription>
 		<geo:GNSSReceiver xlink:href="#GNSS_REC_3"/>
 		<geo:GNSSAntenna xlink:href="#GNSS_ANT_1"/>
@@ -552,7 +553,8 @@
 				<geo:statusCode codeSpace="">Authoritative</geo:statusCode>
 			</geo:currentStatus>
 		</geo:Status>
-		<geo:history>
+		<!-- Temp removed history at https://github.com/GeoscienceAustralia/GeodesyML/commit/444354da44c4102ee9a7d07a6bd18eefc7d36e9e -->
+		<!-- geo:history>
 			<geo:PositionTimeSlice gml:id="ID_7">
 				<geo:coordinates uomLabels="m" axisLabels="X Y Z">-.413063656951996E+07
 					0.289495312583357E+07 -.389053047150543E+07</geo:coordinates>
@@ -618,6 +620,6 @@
 					codeSpace="urn:xml-gov-au:icsm:egeodesy:sp1v20_positional-uncertainty"
 					uomLabels="m">0.00260872</geo:NumericSingleQuality>
 			</geo:PositionTimeSlice>
-		</geo:history>
+		</geo:history -->
 	</geo:PositionTimeSeries>
 </geo:GeodesyML>

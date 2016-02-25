@@ -129,7 +129,12 @@ Notes        : This element describes the realtime data streams available from
 			</choice>
 			<element name="port" type="positiveInteger"/>
 			<element name="sampInterval" type="double"/>
-			<element name="dataFormat" type="geo:dataFormatType"/>
+			<element name="dataFormat" type="gml:CodeType">
+				<annotation>
+					<documentation>Temporarily changing this from `geo:dataFormatType` to `gml:CodeType`, which resolves to a
+						xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+				</annotation>
+			</element>
 			<element name="ntripMounts" type="geo:ntripMountsType" minOccurs="0"/>
 			<element name="startDate" type="date" minOccurs="0"/>
 		</sequence>

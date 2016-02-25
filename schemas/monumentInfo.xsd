@@ -228,21 +228,31 @@
             <element name="monumentInscription" type="string"/>
             <element name="iersDOMESNumber" type="string"/>
             <element name="cdpNumber" type="string"/>
-            <element name="monumentDescription" type="geo:monumentDescriptionTypeOfType"/>
+            <element name="monumentDescription" type="gml:CodeType">
+                <annotation>
+                    <documentation>Temporarily changing this from `geo:monumentDescriptionTypeOfType` to `gml:CodeType`, which resolves to a
+                        xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+                </annotation>
+            </element>
             <element name="heightOfTheMonument" type="string"/>
             <element name="monumentFoundation" type="string"/>
             <element name="foundationDepth" type="string"/>
             <element name="markerDescription" type="string"/>
             <element name="dateInstalled" type="gml:TimePositionType"/>
-            <element name="geologicCharacteristic" type="geo:geologicCharacteristicType"/>
+            <element name="geologicCharacteristic" type="gml:CodeType">
+                <annotation>
+                    <documentation>Temporarily changing this from `geo:geologicCharacteristicType` to `gml:CodeWithAuthorityType`, which resolves to a
+                        xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+                </annotation>
+            </element>
             <element name="bedrockType" type="string"/>
             <element name="bedrockCondition" type="string"/>
             <element name="fractureSpacing" type="string"/>
-            <element name="faultZonesNearby" type="gml:CodeWithAuthorityType">
+            <element name="faultZonesNearby" type="gml:CodeType">
                 <annotation>
                     <documentation>Temporarily changing this from `geo:faultZonesNearbyType` since it a) has a blank enumeration forcing
                         JAXB to make the values to 'VALUE_1', 'VALUE_2' etc... instaed of 'Yes', 'No' etc. And b) because it includes an
-                        enumeration of 'Name_of_Zone' which does not make sense as an enumeration. It is now, which resolves to a
+                        enumeration of 'Name_of_Zone' which does not make sense as an enumeration. It is now `gml:CodeType`, which resolves to a
                         xsd:string. </documentation>
                 </annotation>
             </element>
@@ -276,7 +286,12 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="tectonicPlate" type="geo:tectonicPlateTypeOfTypes"/>
+            <element name="tectonicPlate" type="gml:CodeType">
+                <annotation>
+                    <documentation>Temporarily changing this from `geo:tectonicPlateTypeOfTypes` to `gml:CodeType`, which resolves to a
+                        xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+                </annotation>
+            </element>
             <element name="approximatePositionITRF">
                 <complexType>
                     <sequence>

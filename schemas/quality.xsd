@@ -154,9 +154,11 @@
 		</annotation>
 	</element>
 	<!--  -->
-	<element name="DescriptiveQuality" type="geo:DescriptiveQualityType" substitutionGroup="geo:AbstractQuality">
+	<element name="DescriptiveQuality" type="gml:CodeType" substitutionGroup="geo:AbstractQuality">
 		<annotation>
 			<documentation>A string-only value that is used to describe parameter quality when a numeric value is not available.</documentation>
+			<documentation>Temporarily changing this from `geo:DescriptiveQualityType` to `gml:CodeType`, which resolves to a
+				xsd:string. Will be making into a CodeList when confirm the values.</documentation>
 		</annotation>
 	</element>
 	<!--  -->
