@@ -59,7 +59,12 @@
 			<enumeration value="TGR"/>
 		</restriction>
 	</simpleType>
-	<element name="antennaReferencePoint" type="geo:antennaReferencePointType"/>
+	<element name="antennaReferencePoint" type="gml:CodeType">
+		<annotation>
+			<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves to a
+				xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+		</annotation>
+	</element>
 	<!-- used by gnss Receiver -->
 	<simpleType name="satelliteSystemTypeOfType">
 		<restriction base="string">
@@ -179,8 +184,18 @@
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
-					<element name="instrumentationType" type="geo:instrumentationTypeOfType"/>
-					<element name="status" type="geo:statusType"/>
+					<element name="instrumentationType" type="gml:CodeType">
+						<annotation>
+							<documentation>Temporarily changing this from `geo:instrumentationTypeOfType` to `gml:CodeType`, which resolves to a
+								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+						</annotation>
+					</element>
+					<element name="status" type="gml:CodeType">
+						<annotation>
+							<documentation>Temporarily changing this from `geo:statusType` to `gml:CodeType`, which resolves to a
+								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+						</annotation>
+					</element>
 					<element ref="gml:validTime"/>
 					<element name="notes" type="string"/>
 				</sequence>
@@ -204,7 +219,12 @@
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
-					<element name="standardType" type="geo:standardTypeOfType"/>
+					<element name="standardType" type="gml:CodeType">
+						<annotation>
+							<documentation>Temporarily changing this from `geo:standardTypeOfType` to `gml:CodeType`, which resolves to a
+								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+						</annotation>
+					</element>
 					<element name="inputFrequency" type="string"/>
 					<element ref="gml:validTime"/>
 					<element name="notes" type="string"/>
@@ -302,7 +322,12 @@
 			<extension base="geo:AbstractGNSSReceiverType">
 				<sequence>
 					<element name="receiverType" type="geo:igsReceiverModelCodeType"/>
-					<element name="satelliteSystem" type="geo:satelliteSystemTypeOfType" maxOccurs="unbounded"/>
+					<element name="satelliteSystem" type="gml:CodeType" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Temporarily changing this from `geo:satelliteSystemTypeOfType` to `gml:CodeType`, which resolves to a
+								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+						</annotation>
+					</element>
 					<element name="serialNumber" type="string"/>
 					<element name="firmwareVersion" type="string"/>
 					<element name="elevationCutoffSetting" type="string"/>
