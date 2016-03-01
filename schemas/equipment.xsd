@@ -231,7 +231,11 @@
 						</annotation>
 					</element>
 					<element name="inputFrequency" type="string"/>
-					<element ref="gml:validTime"/>
+					<element name="effectiveDate" type="gml:TimePositionType">
+						<annotation>
+							<documentation>Changed from ref to gml:validTime to gml:TimePositionType as the former is useless.</documentation>
+						</annotation>
+					</element>
 					<element name="notes" type="string"/>
 				</sequence>
 			</extension>
