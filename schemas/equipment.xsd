@@ -151,7 +151,12 @@
 				<sequence>
 					<element name="antennaType" type="geo:igsAntennaModelCodeType"/>
 					<element name="serialNumber" type="string"/>
-					<element name="antennaReferencePoint" type="geo:antennaReferencePointType"/>
+					<element name="antennaReferencePoint" type="gml:CodeType">
+						<annotation>
+							<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves to a
+								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+						</annotation>
+					</element>
 					<element name="marker-arpUpEcc." type="string"/>
 					<element name="marker-arpNorthEcc." type="string"/>
 					<element name="marker-arpEastEcc." type="string"/>
