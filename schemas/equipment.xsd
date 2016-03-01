@@ -231,9 +231,9 @@
 						</annotation>
 					</element>
 					<element name="inputFrequency" type="string"/>
-					<element name="effectiveDate" type="gml:TimePositionType">
+					<element name="effectiveDate" type="gml:TimePeriodType">
 						<annotation>
-							<documentation>Changed from ref to gml:validTime to gml:TimePositionType as the former is useless.</documentation>
+							<documentation>Changed from ref to gml:validTime to gml:TimePeriodType as the former is ineffective.  It is a period so can express Begin and End dates.</documentation>
 						</annotation>
 					</element>
 					<element name="notes" type="string"/>
