@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:geo="urn:xml-gov-au:icsm:egeodesy:0.2" targetNamespace="urn:xml-gov-au:icsm:egeodesy:0.2" elementFormDefault="qualified" version="0.2.2" xml:lang="en">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:geo="urn:xml-gov-au:icsm:egeodesy:0.2" targetNamespace="urn:xml-gov-au:icsm:egeodesy:0.2" elementFormDefault="qualified"
+	version="0.2.2" xml:lang="en">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<include schemaLocation="geodeticEquipment.xsd"/>
 	<include schemaLocation="fieldMeasurement.xsd"/>
 	<include schemaLocation="measurement.xsd"/>
 	<include schemaLocation="commonTypes.xsd"/>
 	<annotation>
-		<documentation>
-     Filename     : baseEquipmentLib.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 9, 2003
-     Description  : This schema contains many uniquely derived complexTypes
-                  : and simpleTypes that are used by multiple site metadata
-                  : schemas.
-     Notes        : Used by temperatureSensor.xsd, humiditySensor.xsd,
-                  : waterVaporSensor.xsd, pressureSensor.xsd, receiver.xsd
-                  : antenna.xsd, collocation.xsd, and frequencyStandard.xsd
-  </documentation>
+		<documentation> Filename : baseEquipmentLib.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 9,
+			2003 Description : This schema contains many uniquely derived complexTypes : and simpleTypes that are used by multiple site
+			metadata : schemas. Notes : Used by temperatureSensor.xsd, humiditySensor.xsd, : waterVaporSensor.xsd, pressureSensor.xsd,
+			receiver.xsd : antenna.xsd, collocation.xsd, and frequencyStandard.xsd </documentation>
 	</annotation>
 	<!-- restriction of geo:Instrument to require the type field.  -->
 	<complexType name="SensorWithCodeType">
@@ -71,8 +66,8 @@
 	</simpleType>
 	<element name="antennaReferencePoint" type="gml:CodeType">
 		<annotation>
-			<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves to a
-				xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+			<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves to a xsd:string.
+				Will be making into a CodeList when confirm the values.</documentation>
 		</annotation>
 	</element>
 	<!-- used by gnss Receiver -->
@@ -144,16 +139,9 @@
 	<!-- equipment.xsd not included due to being redefined in geodeticEquipment.xsd -->
 	<!-- Antenna.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : antenna.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 17, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the GNSS Antenna section of an XML-Encoded IGS Site Log
-                  : Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : antenna.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 17, 2003
+			Description : This schema contains the constraints used to validate : the GNSS Antenna section of an XML-Encoded IGS Site Log :
+			Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac. </documentation>
 	</annotation>
 	<complexType name="gnssAntennaType">
 		<complexContent>
@@ -163,8 +151,8 @@
 					<element name="serialNumber" type="string"/>
 					<element name="antennaReferencePoint" type="gml:CodeType">
 						<annotation>
-							<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves to a
-								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+							<documentation>Temporarily changing this from `geo:antennaReferencePointType` to `gml:CodeType`, which resolves
+								to a xsd:string. Will be making into a CodeList when confirm the values.</documentation>
 						</annotation>
 					</element>
 					<element name="marker-arpUpEcc." type="string"/>
@@ -184,16 +172,10 @@
 	</complexType>
 	<!-- collocationInformation.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : collocationInformation.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the collocation Information section of an XML-Encoded IGS
-                  : Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : collocationInformation.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October
+			20, 2003 Description : This schema contains the constraints used to validate : the collocation Information section of an
+			XML-Encoded IGS : Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at
+			sopac. </documentation>
 	</annotation>
 	<complexType name="collocationInformationType">
 		<complexContent>
@@ -201,8 +183,8 @@
 				<sequence>
 					<element name="instrumentationType" type="gml:CodeType">
 						<annotation>
-							<documentation>Temporarily changing this from `geo:instrumentationTypeOfType` to `gml:CodeType`, which resolves to a
-								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+							<documentation>Temporarily changing this from `geo:instrumentationTypeOfType` to `gml:CodeType`, which resolves
+								to a xsd:string. Will be making into a CodeList when confirm the values.</documentation>
 						</annotation>
 					</element>
 					<element name="status" type="gml:CodeType">
@@ -229,16 +211,10 @@
 	</complexType>
 	<!-- frequencyStandard.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : frequencyStandard.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Frequency Standard section of an XML-Encoded IGS
-                  : Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : frequencyStandard.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Frequency Standard section of an XML-Encoded IGS
+			: Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
+		</documentation>
 	</annotation>
 	<complexType name="frequencyStandardType">
 		<complexContent>
@@ -269,15 +245,9 @@
 	</complexType>
 	<!-- humiditySensor.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : humiditySensor.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Humidity Sensor section of an XML-Encoded IGS Site
-                  : Log Document.
-     Notes        : This defined complexType is part of the set of site 
-                  : metadata schemas developed at sopac.  
+		<documentation> Filename : humiditySensor.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Humidity Sensor section of an XML-Encoded IGS
+			Site : Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
 		</documentation>
 	</annotation>
 	<complexType name="humiditySensorType">
@@ -294,16 +264,10 @@
 	</complexType>
 	<!-- otherInstrumentation.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : otherInstrumentation.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Other Instrumentation section of an XML-Encoded
-                  : IGS Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : otherInstrumentation.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October
+			20, 2003 Description : This schema contains the constraints used to validate : the Other Instrumentation section of an
+			XML-Encoded : IGS Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at
+			sopac. </documentation>
 	</annotation>
 	<complexType name="otherInstrumentationType">
 		<complexContent>
@@ -317,16 +281,10 @@
 	</complexType>
 	<!-- pressureSensor.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : pressureSensor.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Pressure Sensor section of an XML-Encoded IGS Site
-                  : Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : pressureSensor.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Pressure Sensor section of an XML-Encoded IGS
+			Site : Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
+		</documentation>
 	</annotation>
 	<complexType name="pressureSensorType">
 		<complexContent>
@@ -341,16 +299,9 @@
 	</complexType>
 	<!-- receiver.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : receiver.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 17, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the GNSS Receiver section of an XML-Encoded IGS Site
-                  : Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-		</documentation>
+		<documentation> Filename : receiver.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 17, 2003
+			Description : This schema contains the constraints used to validate : the GNSS Receiver section of an XML-Encoded IGS Site : Log
+			Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac. </documentation>
 	</annotation>
 	<complexType name="gnssReceiverType">
 		<complexContent>
@@ -359,8 +310,8 @@
 					<element name="receiverType" type="geo:igsReceiverModelCodeType"/>
 					<element name="satelliteSystem" type="gml:CodeType" maxOccurs="unbounded">
 						<annotation>
-							<documentation>Temporarily changing this from `geo:satelliteSystemTypeOfType` to `gml:CodeType`, which resolves to a
-								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
+							<documentation>Temporarily changing this from `geo:satelliteSystemTypeOfType` to `gml:CodeType`, which resolves
+								to a xsd:string. Will be making into a CodeList when confirm the values.</documentation>
 						</annotation>
 					</element>
 					<element name="serialNumber" type="string"/>
@@ -376,16 +327,10 @@
 	</complexType>
 	<!-- surveyedLocalTies.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : surveyedLocalTies.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Surveyed Local Ties section of an XML-Encoded IGS
-                  : Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-    </documentation>
+		<documentation> Filename : surveyedLocalTies.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Surveyed Local Ties section of an XML-Encoded IGS
+			: Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
+		</documentation>
 	</annotation>
 	<complexType name="surveyedLocalTiesType">
 		<complexContent>
@@ -426,16 +371,10 @@
 	</complexType>
 	<!-- temperatureSensor.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : temperatureSensor.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Temperature Sensor section of an XML-Encoded IGS
-                  : Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
-  </documentation>
+		<documentation> Filename : temperatureSensor.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Temperature Sensor section of an XML-Encoded IGS
+			: Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
+		</documentation>
 	</annotation>
 	<complexType name="temperatureSensorType">
 		<complexContent>
@@ -451,15 +390,9 @@
 	</complexType>
 	<!-- waterVapourSensor.xsd -->
 	<annotation>
-		<documentation>
-     Filename     : waterVaporSensor.xsd
-     Organization : Scripps Orbit and Permanent Array Center (SOPAC)
-     Date         : October 20, 2003
-     Description  : This schema contains the constraints used to validate
-                  : the Water Vapor Sensor section of an XML-Encoded IGS
-                  : Site Log Document.
-     Notes        : This defined complexType is part of the set of site
-                  : metadata schemas developed at sopac.
+		<documentation> Filename : waterVaporSensor.xsd Organization : Scripps Orbit and Permanent Array Center (SOPAC) Date : October 20,
+			2003 Description : This schema contains the constraints used to validate : the Water Vapor Sensor section of an XML-Encoded IGS
+			: Site Log Document. Notes : This defined complexType is part of the set of site : metadata schemas developed at sopac.
 		</documentation>
 	</annotation>
 	<complexType name="waterVaporSensorType">
@@ -548,9 +481,9 @@
 	<!--  -->
 	<complexType name="otherInstrumentationPropertyType">
 		<sequence>
-		<sequence minOccurs="0">
-			<element ref="geo:otherInstrumentation"/>
-		</sequence>
+			<sequence minOccurs="0">
+				<element ref="geo:otherInstrumentation"/>
+			</sequence>
 			<group ref="geo:ChangeTracking"/>
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"/>
