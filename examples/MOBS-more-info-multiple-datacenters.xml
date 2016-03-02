@@ -335,12 +335,12 @@
 			<geo:frequencyStandard gml:id="FREQSTANDARD_1">
 				<geo:standardType>QUARTZ</geo:standardType>
 				<geo:inputFrequency>5Mhz</geo:inputFrequency>
-				<gml:validTime>
+				<geo:effectiveDates>
 					<gml:TimePeriod gml:id="FS_TP_1">
 						<gml:beginPosition>2002-10-29Z</gml:beginPosition>
 						<gml:endPosition indeterminatePosition="unknown"/>
 					</gml:TimePeriod>
-				</gml:validTime>
+				</geo:effectiveDates>
 				<geo:notes/>
 			</geo:frequencyStandard>
 		</geo:frequencyStandards>

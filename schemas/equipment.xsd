@@ -43,7 +43,17 @@
 					<element name="serialNumber" type="string"/>
 					<element name="heightDiffToAntenna" type="string"/>
 					<element name="calibrationDate" type="gml:TimePositionType"/>
-					<element ref="gml:validTime"/>
+					<element name="effectiveDates">
+						<annotation>
+							<documentation>Changed from (ref to gml:validTime (with name 'ValidTime')) to gml:TimePeriod as the former
+								is ineffective. It is a period so can express Begin and End dates.</documentation>
+						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="gml:TimePeriod"/>
+							</sequence>
+						</complexType>
+					</element>
 				</sequence>
 			</extension>
 		</complexContent>
@@ -201,7 +211,17 @@
 								xsd:string. Will be making into a CodeList when confirm the values.</documentation>
 						</annotation>
 					</element>
-					<element ref="gml:validTime"/>
+					<element name="effectiveDates">
+						<annotation>
+							<documentation>Changed from (ref to gml:validTime (with name 'ValidTime')) to gml:TimePeriod as the former
+								is ineffective. It is a period so can express Begin and End dates.</documentation>
+						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="gml:TimePeriod"/>
+							</sequence>
+						</complexType>
+					</element>
 					<element name="notes" type="string"/>
 				</sequence>
 			</extension>
@@ -231,10 +251,16 @@
 						</annotation>
 					</element>
 					<element name="inputFrequency" type="string"/>
-					<element name="effectiveDates" type="gml:TimePeriodType">
+					<element name="effectiveDates">
 						<annotation>
-							<documentation>Changed from ref to gml:validTime to gml:TimePeriodType as the former is ineffective.  It is a period so can express Begin and End dates.</documentation>
+							<documentation>Changed from (ref to gml:validTime (with name 'ValidTime')) to gml:TimePeriod as the former
+								is ineffective. It is a period so can express Begin and End dates.</documentation>
 						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="gml:TimePeriod"/>
+							</sequence>
+						</complexType>
 					</element>
 					<element name="notes" type="string"/>
 				</sequence>
