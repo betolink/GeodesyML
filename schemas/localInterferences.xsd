@@ -80,7 +80,12 @@ located in baseLocalInterferences.xsd.  can not use these without getting errors
 		<complexContent>
 			<extension base="gml:AbstractFeatureType">
 				<sequence>
-					<element ref="gml:validTime"/>
+					<element name="date" type="gml:TimePositionType">
+						<annotation>
+							<documentation>Changed from (ref to gml:validTime (with name 'ValidTime')) to gml:TimePositionType as the former
+								is ineffective.</documentation>
+						</annotation>
+					</element>
 					<element name="event" type="string"/>
 				</sequence>
 			</extension>
